@@ -1,791 +1,659 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!-- SEO -->
 <title>Cafe France | Restaurant in Parañaque</title>
+<meta name="description" content="Cafe France — Good food, great company. Visit us in Parañaque.">
+<meta name="keywords" content="Cafe France, Restaurant, Parañaque, Philippines, local business">
+<meta name="category" content="Restaurant">
+<meta property="og:title" content="Cafe France | Restaurant in Parañaque">
+<meta property="og:description" content="Cafe France — Good food, great company. Visit us in Parañaque.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cafe France — Good food, great company.">
+
 <!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "error-container": "#93000a",
-                    "secondary-fixed-dim": "#bfcd8f",
-                    "on-secondary-fixed": "#171e00",
-                    "on-error": "#690005",
-                    "surface-tint": "#ffb59c",
-                    "on-primary-fixed-variant": "#822701",
-                    "on-error-container": "#ffdad6",
-                    "on-primary": "#5c1900",
-                    "surface-container-low": "#1c1b1b",
-                    "on-surface-variant": "#dec0b7",
-                    "outline-variant": "#57423b",
-                    "on-primary-fixed": "#390c00",
-                    "tertiary-container": "#939181",
-                    "surface-bright": "#393939",
-                    "on-tertiary": "#313124",
-                    "on-secondary-fixed-variant": "#404b1b",
-                    "primary-fixed": "#ffdbcf",
-                    "secondary": "#bfcd8f",
-                    "tertiary-fixed": "#e6e3d0",
-                    "inverse-primary": "#a23e18",
-                    "surface": "#131313",
-                    "primary-fixed-dim": "#ffb59c",
-                    "on-surface": "#e5e2e1",
-                    "secondary-container": "#45501f",
-                    "surface-container-lowest": "#0e0e0e",
-                    "on-background": "#e5e2e1",
-                    "surface-dim": "#131313",
-                    "inverse-surface": "#e5e2e1",
-                    "inverse-on-surface": "#313030",
-                    "surface-container-high": "#2a2a2a",
-                    "on-primary-container": "#511500",
-                    "on-tertiary-fixed-variant": "#48473a",
-                    "on-tertiary-fixed": "#1c1c11",
-                    "surface-variant": "#353535",
-                    "on-secondary": "#2a3406",
-                    "error": "#ffb4ab",
-                    "surface-container-highest": "#353535",
-                    "surface-container": "#20201f",
-                    "tertiary": "#c9c7b5",
-                    "on-secondary-container": "#b4c285",
-                    "secondary-fixed": "#dbe9a9",
-                    "primary": "#1C1A18",
-                    "tertiary-fixed-dim": "#c9c7b5",
-                    "background": "#FAF8F5",
-                    "primary-container": "#C2847A",
-                    "outline": "#a58b83",
-                    "on-tertiary-container": "#2b2a1e"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "spacing": {
-                    "container-max": "1200px",
-                    "unit": "8px",
-                    "margin-desktop": "64px",
-                    "gutter": "24px",
-                    "margin-mobile": "20px"
-            },
-            "fontFamily": {
-                    "label-lg": ["Nunito+Sans"],
-                    "label-sm": ["Nunito+Sans"],
-                    "headline-lg": ["Playfair+Display"],
-                    "headline-md": ["Playfair+Display"],
-                    "body-md": ["Nunito+Sans"],
-                    "display-lg-mobile": ["Playfair+Display"],
-                    "display-lg": ["Playfair+Display"],
-                    "body-lg": ["Nunito+Sans"]
-            },
-            "fontSize": {
-                    "label-lg": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                    "label-sm": ["12px", {"lineHeight": "1.2", "fontWeight": "500"}],
-                    "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
-                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
-                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
-                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
-            }
-          },
-        },
-      }
-    </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Nunito+Sans:wght@400;500;600&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+
 <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-            display: inline-block;
-            vertical-align: middle;
-        }
-        
-        /* Subtle Grain Texture Overlay */
-        .grain-bg::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0.035;
-            pointer-events: none;
-            z-index: 1;
-            background-image: url("https://www.transparenttextures.com/patterns/p6.png");
-        }
+:root {
+  --primary-color: #262220;
+  --accent-color: #C0392B;
+  --background-color: #FAF6F2;
+  --font-heading: 'Playfair+Display', sans-serif;
+  --font-body: 'Nunito+Sans', sans-serif;
+}
 
-        /* Organic Section Transitions */
-        .slant-down {
-            clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
-        }
-        .slant-up {
-            clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
-        }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--background-color);
+  font-family: var(--font-body);
+  color: var(--primary-color);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+a { color: var(--primary-color); text-decoration: none; }
+a:hover { color: var(--accent-color); }
 
-        /* Torn Paper Fringe Effect */
-        .torn-edge-bottom::after {
-            content: "";
-            position: absolute;
-            bottom: -1px;
-            left: 0;
-            width: 100%;
-            height: 24px;
-            background-color: inherit;
-            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 24' preserveAspectRatio='none'%3E%3Cpath d='M0,24 L1200,24 L1200,0 C1150,15 1100,5 1050,18 C1000,8 950,22 900,10 C850,20 800,5 750,15 C700,5 650,22 600,12 C550,22 500,5 450,15 C400,8 350,22 300,10 C250,20 200,5 150,15 C100,8 50,22 0,10 Z' fill='black'/%3E%3C/svg%3E");
-            mask-size: 100% 100%;
-            z-index: 5;
-        }
+img { display: block; max-width: 100%; height: auto; }
 
-        .torn-edge-top::before {
-            content: "";
-            position: absolute;
-            top: -23px;
-            left: 0;
-            width: 100%;
-            height: 24px;
-            background-color: inherit;
-            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 24' preserveAspectRatio='none'%3E%3Cpath d='M0,0 L1200,0 L1200,24 C1150,9 1100,19 1050,6 C1000,16 950,2 900,14 C850,4 800,19 750,9 C700,19 650,2 600,12 C550,2 500,19 450,9 C400,16 350,2 300,14 C250,4 200,19 150,9 C100,16 50,2 0,14 Z' fill='black'/%3E%3C/svg%3E");
-            mask-size: 100% 100%;
-            z-index: 5;
-        }
+.container { max-width: 1280px; margin: 0 auto; padding: 0 56px; }
 
-        /* Textured Section Divider - Enhanced with Organic Shape */
-        .textured-border {
-            position: relative;
-        }
-        .textured-border::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 5%;
-            right: 5%;
-            height: 1px;
-            background: linear-gradient(to right, transparent, rgba(165, 139, 131, 0.4) 20%, rgba(165, 139, 131, 0.4) 80%, transparent);
-            filter: contrast(150%) brightness(80%);
-            box-shadow: 0 0.5px 0.5px rgba(0,0,0,0.5);
-            border-bottom: 1px dashed rgba(165, 139, 131, 0.2);
-        }
+/* NAV */
+.nav {
+  position: sticky; top: 0; z-index: 50;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 20px 56px;
+  background: rgba(253,246,238,0.85);
+  backdrop-filter: blur(12px);
+}
+.nav-brand {
+  display: flex; align-items: center; gap: 10px;
+  font-family: var(--font-heading); font-weight: 800;
+  font-size: 20px; letter-spacing: -0.02em;
+}
+.nav-brand-mark {
+  width: 34px; height: 34px; border-radius: 50% 50% 50% 8px;
+  background: var(--primary-color);
+  display: grid; place-items: center;
+}
+.nav-brand-mark::after {
+  content: ''; width: 12px; height: 16px;
+  border: 2px solid var(--accent-color);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+.nav-links { display: flex; align-items: center; gap: 36px; }
+.nav-links a { font-size: 15px; font-weight: 500; }
+.nav-cta {
+  font-weight: 600; background: var(--primary-color);
+  color: var(--background-color); padding: 10px 22px;
+  border-radius: 999px; transition: background 0.2s;
+}
+.nav-cta:hover { background: var(--accent-color); color: var(--primary-color); }
 
-        .text-glow {
-            text-shadow: 0 0 20px rgba(255, 181, 156, 0.2);
-        }
-    </style>
-</head>
-<body class="bg-background text-on-background selection:bg-primary/30 selection:text-primary grain-bg relative">
-<!-- Top Navigation Bar -->
-<nav class="fixed top-0 w-full z-50 bg-surface/20 backdrop-blur-md transition-all duration-300">
-<div class="flex justify-between items-center px-margin-desktop py-unit max-w-container-max mx-auto">
-<a class="font-headline-md text-headline-md text-primary" href="#">Cafe France</a>
-<div class="hidden md:flex items-center gap-gutter">
-<a class="font-label-lg text-label-lg tracking-widest uppercase text-on-surface hover:text-primary transition-colors duration-300" href="#">Menu</a>
-<a class="font-label-lg text-label-lg tracking-widest uppercase text-on-surface hover:text-primary transition-colors duration-300" href="#">Our Story</a>
-<a href="https://wa.me/639178615966" class="ml-4 bg-primary text-on-primary px-6 py-2 transition-all duration-200 font-label-lg text-label-lg uppercase tracking-widest hover:brightness-110">Contact Us</a>
-</div>
-<button class="md:hidden text-primary">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</nav>
-<!-- Product-Focused Hero Section -->
-<header class="relative min-h-screen flex items-center overflow-hidden pt-20 bg-surface-container-lowest slant-down torn-edge-bottom">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
-<!-- Hero Text -->
-<div class="relative z-10 order-2 lg:order-1">
-<span class="text-primary font-label-lg text-label-lg uppercase tracking-[0.3em] mb-4 block">Serving Parañaque ★ 4.0</span>
-<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-background mb-6 leading-tight">Cafe France</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-lg">Restaurant</p>
-<div class="flex flex-col sm:flex-row items-center gap-6">
-<a href="https://wa.me/639178615966" class="w-full sm:w-auto bg-primary text-on-primary px-10 py-4 font-label-lg text-label-lg uppercase tracking-widest transition-all duration-300 hover:shadow-[0_0_30px_rgba(255,181,156,0.3)]">Get in Touch</a>
-<button class="w-full sm:w-auto border border-outline text-on-surface px-10 py-4 font-label-lg text-label-lg uppercase tracking-widest transition-all duration-300 hover:bg-on-surface/5">
-                    View Menu
-                </button>
-</div>
-</div>
-<!-- Hero Image (Product-Style) -->
-<div class="relative order-1 lg:order-2 flex justify-center lg:justify-end">
-<div class="relative w-full aspect-square max-w-[540px] group">
-<div class="absolute -inset-4 border border-outline-variant/30 rounded-full animate-[spin_20s_linear_infinite] opacity-40"></div>
-<div class="absolute inset-0 bg-surface-container-high rounded-full overflow-hidden shadow-2xl border border-outline-variant/20">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&amp;h=1080&amp;fit=crop')"></div>
-</div>
-<div class="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 backdrop-blur-md rounded-full border border-primary/20 flex items-center justify-center">
-<span class="text-primary font-headline-md italic">Chef's Choice</span>
-</div>
-</div>
-</div>
-</div>
-<div class="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce opacity-40 z-20">
-<span class="material-symbols-outlined text-primary">expand_more</span>
-</div>
-</header>
-<!-- Menu Grid Section -->
-<section class="relative py-48 overflow-hidden bg-background">
-<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-gutter">
-<div class="max-w-xl">
-<span class="text-primary font-label-lg text-label-lg uppercase tracking-widest mb-4 block">Signature Selections</span>
-<h2 class="font-headline-lg text-headline-lg text-on-background">Our Services</h2>
-</div>
-<div class="h-px bg-outline-variant flex-grow mx-8 hidden md:block opacity-30 border-b border-dashed border-outline-variant"></div>
-<a class="font-label-lg text-label-lg uppercase tracking-widest text-primary flex items-center gap-2 group" href="#">
-                Full Menu <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
-</a>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-<!-- Dish Card 1 -->
-<div class="group relative bg-surface-container-low/50 border border-outline-variant/20 rounded-lg overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:bg-surface-container-low">
-<div class="aspect-[4/5] relative">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&amp;h=400&amp;fit=crop')" role="img" aria-label="Chef&#39;s Special"></div>
-<div class="absolute top-4 right-4">
-<span class="bg-secondary-container/80 backdrop-blur-sm text-on-secondary-container px-3 py-1 rounded-full font-label-sm text-label-sm uppercase tracking-wider">Vegetarian</span>
-</div>
-</div>
-<div class="p-8">
-<h3 class="font-headline-md text-headline-md text-on-background mb-2">Chef's Special</h3>
-<p class="text-on-surface-variant font-body-md text-body-md mb-6 italic">Today's featured dish, made fresh.</p>
-<div class="flex justify-between items-center">
-<span class="text-primary font-bold"></span>
-<button class="material-symbols-outlined text-primary hover:scale-110 transition-transform">add_circle</button>
-</div>
-</div>
-</div>
-<!-- Dish Card 2 -->
-<div class="group relative bg-surface-container-low/50 border border-outline-variant/20 rounded-lg overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:bg-surface-container-low">
-<div class="aspect-[4/5] relative">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&amp;h=400&amp;fit=crop')" role="img" aria-label="Family Platter"></div>
-</div>
-<div class="p-8">
-<h3 class="font-headline-md text-headline-md text-on-background mb-2">Family Platter</h3>
-<p class="text-on-surface-variant font-body-md text-body-md mb-6 italic">Shareable portions for the table.</p>
-<div class="flex justify-between items-center">
-<span class="text-primary font-bold"></span>
-<button class="material-symbols-outlined text-primary hover:scale-110 transition-transform">add_circle</button>
-</div>
-</div>
-</div>
-<!-- Dish Card 3 -->
-<div class="group relative bg-surface-container-low/50 border border-outline-variant/20 rounded-lg overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:bg-surface-container-low">
-<div class="aspect-[4/5] relative">
-<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=601&amp;h=401&amp;fit=crop')" role="img" aria-label="Merienda Set"></div>
-</div>
-<div class="p-8">
-<h3 class="font-headline-md text-headline-md text-on-background mb-2">Merienda Set</h3>
-<p class="text-on-surface-variant font-body-md text-body-md mb-6 italic">Quick, filling, and affordable.</p>
-<div class="flex justify-between items-center">
-<span class="text-primary font-bold"></span>
-<button class="material-symbols-outlined text-primary hover:scale-110 transition-transform">add_circle</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Chef Story Section -->
-<section class="relative py-48 overflow-visible bg-surface-container-high slant-up slant-down torn-edge-top torn-edge-bottom">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
-<div class="grid grid-cols-1 lg:grid-cols-2 items-stretch gap-0 rounded-xl overflow-hidden border border-outline-variant/20 shadow-2xl bg-surface-container-high border-dashed">
-<div class="relative min-h-[500px]">
-<div class="absolute inset-0 bg-cover bg-center grayscale contrast-125" style="background-image: url('https://images.unsplash.com/photo-1555396273-3611c8e0b9b7?w=800&amp;h=600&amp;fit=crop')" role="img" aria-label="Cafe France"></div>
-<div class="absolute inset-0 bg-gradient-to-r from-background/40 to-transparent"></div>
-</div>
-<div class="p-12 md:p-24 flex flex-col justify-center relative grain-bg">
-<span class="text-primary font-label-lg text-label-lg uppercase tracking-widest mb-6 block">Our Philosophy</span>
-<h2 class="font-headline-lg text-headline-lg text-on-background mb-8 leading-tight">About Cafe France</h2>
-<div class="space-y-6">
-<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">Cafe France brings honest, satisfying food to Parañaque. Every dish is made to be shared and enjoyed with the people you love.</p>
-</div>
-<div class="mt-12 flex items-center gap-6">
-<div class="w-16 h-px bg-primary/40 border-t border-dashed"></div>
-<span class="font-headline-md text-headline-md italic text-primary">Julian Vane</span>
-<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Executive Chef</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- High-Impact CTA Banner -->
-<section class="relative py-48 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto overflow-hidden">
-<div class="relative bg-primary-container rounded-2xl overflow-hidden p-12 md:p-20 text-center shadow-2xl grain-bg border border-dashed border-on-primary-container/20">
-<div class="relative z-10 max-w-2xl mx-auto">
-<h2 class="font-headline-lg text-headline-lg text-on-primary-container mb-6">Bring the Experience Home</h2>
-<p class="font-body-lg text-body-lg text-on-primary-container/80 mb-10">
-                Enjoy our curated menu from the comfort of your own residence. Crafted with the same precision and artistry as our dining room service.
-            </p>
-<div class="flex flex-col sm:flex-row gap-gutter justify-center">
-<button class="bg-on-primary-container text-primary-container px-12 py-5 font-label-lg text-label-lg uppercase tracking-widest font-bold transition-transform hover:scale-105 active:scale-95">
-                    Start Your Order
-                </button>
-<button class="border-2 border-on-primary-container text-on-primary-container px-12 py-5 font-label-lg text-label-lg uppercase tracking-widest font-bold transition-colors hover:bg-on-primary-container hover:text-primary-container">
-                    Reserve a Table
-                </button>
-</div>
-</div>
-</div>
-</section>
-<!-- Footer -->
-<section class="relative py-48 overflow-visible bg-surface-container-low slant-up slant-down torn-edge-top torn-edge-bottom grain-bg">
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
-<div class="grid grid-cols-1 lg:grid-cols-2 items-center gap-16">
-<div class="order-2 lg:order-1">
-<span class="text-primary font-label-lg text-label-lg uppercase tracking-widest mb-6 block">Our Sourcing</span>
-<h2 class="font-headline-lg text-headline-lg text-on-background mb-8 leading-tight">Rooted in the Land</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-6">
-          Our culinary journey begins in the soil. We partner with local regenerative farms to bring you the purest expression of seasonal terroir, where every harvest is a dialogue between the earth and the kitchen.
-        </p>
-<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-          By honoring the natural cycles of the land, we ensure that every ingredient on your plate is at its peak of flavor and nutritional vitality.
-        </p>
-</div>
-<div class="order-1 lg:order-2">
-<div class="aspect-square rounded-2xl overflow-hidden border border-outline-variant/20 shadow-2xl">
-<div class="w-full h-full bg-surface-container-high flex items-center justify-center text-on-surface-variant/40">
-<span class="material-symbols-outlined text-6xl">eco</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section><section class="relative py-48 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto overflow-hidden">
-<div class="text-center max-w-2xl mx-auto">
-<h2 class="font-headline-lg text-headline-lg text-on-background mb-6">Join the Table</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-12">
-      Be the first to know about exclusive tasting events, seasonal menu updates, and stories from our kitchen.
-    </p>
-<form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-<input class="flex-grow bg-transparent border-b border-outline-variant py-4 px-2 font-body-md text-on-background focus:outline-none focus:border-primary transition-colors placeholder:text-on-surface-variant/40" placeholder="Your email address" type="email"/>
-<button class="bg-primary text-on-primary px-10 py-4 font-label-lg text-label-lg uppercase tracking-widest transition-all duration-300 hover:brightness-110" type="submit">
-        Subscribe
-      </button>
-</form>
-</div>
-</section><footer class="bg-surface-container-lowest w-full py-24 grain-bg relative slant-up torn-edge-top overflow-visible">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-desktop max-w-container-max mx-auto relative z-10">
-<div class="space-y-6">
-<h3 class="font-headline-md text-headline-md text-primary">Cafe France</h3>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">Good food, great company.</p>
-<div class="flex gap-4">
-<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
-<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">location_on</span></a>
-<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
-</div>
-</div>
-<div class="grid grid-cols-2 gap-8">
-<div>
-<h4 class="font-label-lg text-label-lg uppercase tracking-widest text-primary mb-6">Discover</h4>
-<ul class="space-y-4">
-<li><a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors" href="#">The Menu</a></li>
-<li><a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors" href="#">Our Story</a></li>
-<li><a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors" href="#">Sustainability</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-label-lg text-label-lg uppercase tracking-widest text-primary mb-6">Details</h4>
-<ul class="space-y-4">
-<li><a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors" href="#">Privacy</a></li>
-<li><a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors" href="#">Terms</a></li>
-</ul>
-</div>
-</div>
-<div class="flex flex-col items-start md:items-end justify-between">
-<div class="text-left md:text-right">
-<h4 class="font-label-lg text-label-lg uppercase tracking-widest text-primary mb-6">Location</h4>
-<p class="text-on-surface-variant font-body-md text-body-md">F24P+9MP</p>
-</div>
-<p class="mt-12 md:mt-0 font-body-md text-body-md text-on-surface-variant opacity-60">
-                © 2024 Cafe France.
-            </p>
-</div>
-</div>
-</footer>
-<!-- Floating Reservation Widget -->
-<div class="fixed bottom-8 right-8 z-40">
-<button class="flex items-center gap-3 bg-surface-container-high/80 backdrop-blur-xl border border-outline-variant/30 text-on-surface px-6 py-4 rounded-full shadow-2xl hover:bg-surface-container-high transition-all duration-300 group">
-<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
-<span class="font-label-lg text-label-lg uppercase tracking-widest">Reserve</span>
-</button>
-</div>
-<script>
-    // Simple scroll interaction for header
-    window.addEventListener('scroll', () => {
-        const nav = document.querySelector('nav');
-        if (window.scrollY > 50) {
-            nav.classList.add('bg-surface/90', 'shadow-2xl');
-            nav.classList.remove('bg-surface/20');
-        } else {
-            nav.classList.add('bg-surface/20');
-            nav.classList.remove('bg-surface/90', 'shadow-2xl');
-        }
-    });
+/* HERO */
+.hero {
+  position: relative; display: grid;
+  grid-template-columns: 1.05fr 1fr; gap: 48px;
+  align-items: center; padding: 64px 56px 110px;
+  max-width: 1280px; margin: 0 auto;
+  background: radial-gradient(120% 90% at 85% 10%, rgba(212,165,116,0.22), rgba(253,246,238,0) 60%);
+}
+.hero-eyebrow {
+  font-family: 'Caveat', cursive; font-size: 26px;
+  color: #8ba888; transform: rotate(-2deg); margin-bottom: 14px;
+}
+.hero h1 {
+  font-family: var(--font-heading); font-weight: 800;
+  font-size: 64px; line-height: 1.05; letter-spacing: -0.03em;
+  margin: 0 0 22px; text-wrap: balance;
+}
+.hero-subhead {
+  font-size: 18px; line-height: 1.65;
+  color: rgba(74,55,40,0.75); max-width: 46ch; margin: 0 0 34px;
+}
+.hero-ctas { display: flex; align-items: center; gap: 22px; }
+.hero-cta {
+  display: inline-block; background: var(--accent-color);
+  color: var(--primary-color); font-weight: 600; font-size: 16px;
+  padding: 15px 32px; border-radius: 999px;
+  box-shadow: 0 10px 28px -10px rgba(212,165,116,0.7);
+  transition: transform 0.2s;
+}
+.hero-cta:hover { transform: translateY(-2px); }
+.hero-hours {
+  font-size: 14px; color: rgba(74,55,40,0.6);
+}
+.hero-images { position: relative; height: 520px; }
+.hero-img-main {
+  position: absolute; top: 0; right: 24px;
+  width: 62%; height: 68%; transform: rotate(2deg);
+  box-shadow: 0 24px 48px -20px rgba(74,55,40,0.35);
+  border-radius: 160px 160px 20px 20px;
+  overflow: hidden;
+}
+.hero-img-main img { width: 100%; height: 100%; object-fit: cover; border-radius: 160px 160px 20px 20px; }
+.hero-img-sub {
+  position: absolute; bottom: 36px; left: 0;
+  width: 46%; height: 46%; transform: rotate(-3deg);
+  box-shadow: 0 20px 40px -18px rgba(74,55,40,0.35);
+  border-radius: 24px; overflow: hidden;
+}
+.hero-img-sub img { width: 100%; height: 100%; object-fit: cover; border-radius: 24px; }
+.hero-img-circle {
+  position: absolute; bottom: 0; right: 0;
+  width: 190px; height: 190px;
+  box-shadow: 0 18px 36px -16px rgba(74,55,40,0.4);
+  border-radius: 50%; overflow: hidden;
+}
+.hero-img-circle img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
 
-    // Hover effect for dish cards
-    document.querySelectorAll('.group').forEach(card => {
-        card.addEventListener('mouseenter', () => {
-            card.style.borderColor = 'rgba(255, 181, 156, 0.4)';
-        });
-        card.addEventListener('mouseleave', () => {
-            card.style.borderColor = 'rgba(87, 66, 59, 0.2)';
-        });
-    });
-</script>
+/* SECTION HEADINGS */
+.section-heading {
+  font-family: var(--font-heading); font-weight: 800;
+  font-size: 40px; letter-spacing: -0.02em;
+  text-wrap: balance;
+}
 
-<!-- ═══════════════════════════════════════════════════════════
-     CREATIVE ENHANCEMENT LAYER — by Hermes
-     GLSL Shader + Scroll Reveals + Bloom + Parallax
-     ═══════════════════════════════════════════════════════════ -->
+/* MENU / SERVICES */
+.menu-section { max-width: 1280px; margin: 0 auto; padding: 40px 56px 90px; }
+.menu-header {
+  display: flex; align-items: baseline; gap: 18px; margin-bottom: 42px;
+}
+.menu-header .accent {
+  font-family: 'Caveat', cursive; font-size: 24px; color: #8ba888;
+}
+.menu-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px;
+}
+.menu-card {
+  display: flex; gap: 18px; align-items: flex-start;
+  background: #ffffff; border-radius: 22px; padding: 20px;
+  box-shadow: 0 12px 30px -18px rgba(74,55,40,0.25);
+}
+.menu-card-img {
+  width: 76px; height: 76px; flex: none;
+  border-radius: 18px; overflow: hidden;
+}
+.menu-card-img img { width: 100%; height: 100%; object-fit: cover; border-radius: 18px; }
+.menu-card-body { min-width: 0; }
+.menu-card-title-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.menu-card-title {
+  font-family: var(--font-heading); font-weight: 700;
+  font-size: 18px;
+}
+.menu-card-desc {
+  font-size: 14px; line-height: 1.55;
+  color: rgba(74,55,40,0.7); margin: 6px 0 10px;
+}
+.menu-card-price {
+  font-family: var(--font-heading); font-weight: 700;
+  font-size: 16px; color: var(--accent-color);
+}
 
-<!-- Scroll reveal CSS -->
-<style>
-  /* Custom easing variables */
-  :root {
-    --ease-expo-out: cubic-bezier(0.16, 1, 0.3, 1);
-    --ease-quart-out: cubic-bezier(0.25, 1, 0.5, 1);
-  }
+/* ABOUT */
+.about-section {
+  background: linear-gradient(180deg, rgba(212,165,116,0.14), rgba(253,246,238,0));
+}
+.about-inner {
+  max-width: 1280px; margin: 0 auto; padding: 90px 56px;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center;
+}
+.about-year {
+  font-family: 'Caveat', cursive; font-size: 26px;
+  color: #8ba888; margin-bottom: 12px;
+}
+.about-body {
+  font-size: 17px; line-height: 1.7;
+  color: rgba(74,55,40,0.78); margin: 0 0 18px;
+}
+.about-body:last-child { margin: 0; }
+.about-image-wrap { position: relative; height: 460px; }
+.about-image {
+  position: absolute; inset: 0;
+  border-radius: 44% 56% 52% 48% / 48% 44% 56% 52%;
+  box-shadow: 0 28px 56px -22px rgba(74,55,40,0.35);
+  overflow: hidden;
+}
+.about-image img { width: 100%; height: 100%; object-fit: cover; }
 
-  /* Scroll reveal — elements fade up on enter */
-  .reveal {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 0.9s var(--ease-expo-out), transform 0.9s var(--ease-expo-out);
-    will-change: opacity, transform;
-  }
-  .reveal.in {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* GALLERY */
+.gallery-section { max-width: 1280px; margin: 0 auto; padding: 30px 56px 90px; }
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  grid-template-rows: 220px 220px;
+  gap: 20px;
+}
+.gallery-item {
+  border-radius: 28px; overflow: hidden;
+  box-shadow: 0 16px 36px -18px rgba(74,55,40,0.3);
+}
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; }
+.gallery-item-tall { grid-row: span 2; }
 
-  /* Staggered children */
-  .reveal-stagger > * {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s var(--ease-expo-out), transform 0.8s var(--ease-expo-out);
-  }
-  .reveal-stagger.in > * {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  .reveal-stagger.in > *:nth-child(1) { transition-delay: 0ms; }
-  .reveal-stagger.in > *:nth-child(2) { transition-delay: 80ms; }
-  .reveal-stagger.in > *:nth-child(3) { transition-delay: 160ms; }
-  .reveal-stagger.in > *:nth-child(4) { transition-delay: 240ms; }
-  .reveal-stagger.in > *:nth-child(5) { transition-delay: 320ms; }
-  .reveal-stagger.in > *:nth-child(6) { transition-delay: 400ms; }
+/* TEAM */
+.team-section { max-width: 1280px; margin: 0 auto; padding: 30px 56px 90px; }
+.team-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px;
+}
+.team-card {
+  background: #ffffff; border-radius: 26px; padding: 30px 28px;
+  box-shadow: 0 14px 34px -20px rgba(74,55,40,0.28);
+  text-align: center;
+}
+.team-card-img {
+  width: 120px; height: 120px; border-radius: 50%;
+  overflow: hidden; margin: 0 auto 18px;
+}
+.team-card-img img { width: 100%; height: 100%; object-fit: cover; }
+.team-card-name {
+  font-family: var(--font-heading); font-weight: 700; font-size: 18px;
+  margin: 0 0 4px;
+}
+.team-card-role {
+  font-size: 14px; color: #8ba888; font-weight: 500;
+}
 
-  /* Clip-path reveal for images */
-  .clip-reveal {
-    clip-path: inset(0 100% 0 0);
-    transition: clip-path 1.2s var(--ease-expo-out);
-  }
-  .clip-reveal.in {
-    clip-path: inset(0 0 0 0);
-  }
+/* TRUST BADGES */
+.trust-section { max-width: 1280px; margin: 0 auto; padding: 10px 56px 90px; }
+.trust-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px;
+}
+.trust-card {
+  text-align: center; padding: 30px;
+}
+.trust-label {
+  font-family: var(--font-heading); font-weight: 800; font-size: 28px;
+  color: var(--accent-color); margin: 0 0 6px;
+}
+.trust-detail {
+  font-size: 15px; color: rgba(74,55,40,0.7);
+}
 
-  /* Bloom overlay for CTA */
-  .bloom-overlay {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    pointer-events: none;
-    z-index: 50;
-    mix-blend-mode: screen;
-    opacity: 0;
-    transition: opacity 0.5s var(--ease-expo-out);
-  }
-  .bloom-overlay.active { opacity: 0.3; }
-  .bloom-overlay::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(ellipse 600px 400px at var(--bloom-x, 50%) var(--bloom-y, 50%), rgba(255, 181, 156, 0.15), transparent);
-  }
+/* TESTIMONIALS */
+.testimonials-section { max-width: 1280px; margin: 0 auto; padding: 10px 56px 100px; }
+.testimonials-header {
+  display: flex; align-items: baseline; gap: 18px; margin-bottom: 42px;
+}
+.testimonials-header .accent {
+  font-family: 'Caveat', cursive; font-size: 24px; color: #8ba888;
+}
+.testimonials-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px;
+}
+.testimonial-card {
+  background: #ffffff; border-radius: 26px; padding: 30px 28px;
+  box-shadow: 0 14px 34px -20px rgba(74,55,40,0.28);
+  display: flex; flex-direction: column; gap: 18px;
+}
+.testimonial-quote-mark {
+  font-family: 'Caveat', cursive; font-size: 40px;
+  line-height: 0.5; color: var(--accent-color);
+}
+.testimonial-text {
+  font-size: 16px; line-height: 1.65; color: rgba(74,55,40,0.85);
+}
+.testimonial-name {
+  font-family: var(--font-heading); font-weight: 700;
+  font-size: 14px; color: #8ba888;
+}
 
-  /* Hero shader canvas */
-  #hero-canvas {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    z-index: 0;
-    pointer-events: none;
-    opacity: 0.5;
-  }
+/* PRICING */
+.pricing-section { max-width: 1280px; margin: 0 auto; padding: 10px 56px 100px; }
+.pricing-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px;
+}
+.pricing-card {
+  background: #ffffff; border-radius: 26px; padding: 36px 30px;
+  box-shadow: 0 14px 34px -20px rgba(74,55,40,0.28);
+  text-align: center; display: flex; flex-direction: column; gap: 14px;
+}
+.pricing-name {
+  font-family: var(--font-heading); font-weight: 700; font-size: 20px;
+}
+.pricing-price {
+  font-family: var(--font-heading); font-weight: 800; font-size: 36px;
+  color: var(--accent-color);
+}
+.pricing-features {
+  font-size: 15px; line-height: 1.65; color: rgba(74,55,40,0.7);
+  white-space: pre-line;
+}
 
-  /* Magnetic button effect */
-  .btn-magnetic {
-    transition: transform 0.3s var(--ease-expo-out), box-shadow 0.3s var(--ease-expo-out);
-  }
-  .btn-magnetic:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 30px rgba(255, 181, 156, 0.3);
-  }
+/* VISIT / CONTACT */
+.visit-section { background: var(--primary-color); color: var(--background-color); }
+.visit-inner {
+  max-width: 1280px; margin: 0 auto; padding: 90px 56px 70px;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center;
+}
+.visit-eyebrow {
+  font-family: 'Caveat', cursive; font-size: 26px;
+  color: var(--accent-color); margin-bottom: 12px;
+}
+.visit-heading {
+  font-family: var(--font-heading); font-weight: 800;
+  font-size: 44px; letter-spacing: -0.02em;
+  margin: 0 0 20px; color: var(--background-color);
+}
+.visit-address {
+  font-size: 17px; line-height: 1.65;
+  color: rgba(253,246,238,0.75); margin: 0 0 30px;
+}
+.visit-ctas { display: flex; gap: 16px; flex-wrap: wrap; }
+.visit-cta-primary {
+  display: inline-block; background: var(--accent-color);
+  color: var(--primary-color); font-weight: 600; font-size: 16px;
+  padding: 14px 30px; border-radius: 999px;
+}
+.visit-cta-secondary {
+  display: inline-block;
+  border: 1.5px solid rgba(253,246,238,0.4);
+  color: var(--background-color); font-weight: 500; font-size: 16px;
+  padding: 14px 30px; border-radius: 999px;
+}
+.visit-cta-secondary:hover { border-color: var(--accent-color); color: var(--accent-color); }
 
-  /* Reduced motion */
-  @media (prefers-reduced-motion: reduce) {
-    .reveal, .reveal-stagger > *, .clip-reveal {
-      opacity: 1 !important;
-      transform: none !important;
-      clip-path: none !important;
-      transition: none !important;
-    }
-    #hero-canvas { display: none; }
-  }
+.hours-card {
+  background: rgba(253,246,238,0.06);
+  border: 1px solid rgba(253,246,238,0.12);
+  border-radius: 28px; padding: 36px 40px;
+}
+.hours-title {
+  font-family: var(--font-heading); font-weight: 700;
+  font-size: 20px; margin: 0 0 22px; color: var(--accent-color);
+}
+.hours-row {
+  display: flex; justify-content: space-between; gap: 24px;
+  font-size: 16px; padding: 7px 0;
+}
+.hours-row .day { color: rgba(253,246,238,0.7); }
+.hours-row .time { font-weight: 600; }
 
-  /* Focus states — keyboard accessibility */
-  a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
-    outline: 2px solid var(--primary, #ffb59c);
-    outline-offset: 2px;
-  }
+.maps-embed {
+  margin-top: 24px; border-radius: 16px; overflow: hidden;
+}
+.maps-embed iframe { width: 100%; height: 200px; border: 0; display: block; }
 
-  /* ARIA labels for background-image elements */
-  [role="img"] {
-    position: relative;
+.visit-footer {
+  max-width: 1280px; margin: 0 auto; padding: 0 56px 36px;
+  display: flex; justify-content: space-between; align-items: center;
+  border-top: 1px solid rgba(253,246,238,0.12);
+}
+.visit-footer-brand {
+  font-family: var(--font-heading); font-weight: 700;
+  font-size: 15px; padding-top: 24px;
+  color: rgba(253,246,238,0.6);
+}
+.visit-footer-phone {
+  font-size: 14px; padding-top: 24px;
+  color: rgba(253,246,238,0.6);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .nav { padding: 16px 24px; }
+  .nav-links { gap: 18px; }
+  .nav-links a:not(.nav-cta) { display: none; }
+  .hero { grid-template-columns: 1fr; padding: 40px 24px 60px; }
+  .hero h1 { font-size: 40px; }
+  .hero-images { height: 360px; }
+  .menu-section, .gallery-section, .team-section, .trust-section,
+  .testimonials-section, .pricing-section { padding-left: 24px; padding-right: 24px; }
+  .menu-grid, .team-grid, .trust-grid, .testimonials-grid, .pricing-grid {
+    grid-template-columns: 1fr;
   }
-  .dish-image > div[style*="background-image"],
-  .hero-image-frame,
-  .chef-image {
-    position: relative;
-  }
-  .dish-image::after {
-    content: attr(data-alt);
-    position: absolute;
-    width: 1px; height: 1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-  }
+  .gallery-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
+  .gallery-item-tall { grid-row: auto; }
+  .about-inner { grid-template-columns: 1fr; padding: 60px 24px; gap: 40px; }
+  .about-image-wrap { height: 320px; }
+  .visit-inner { grid-template-columns: 1fr; padding: 60px 24px; gap: 40px; }
+  .visit-footer { padding: 0 24px 24px; flex-direction: column; gap: 8px; }
+}
 </style>
+</head>
+<body>
 
-<!-- Bloom overlay div -->
-<div class="bloom-overlay" id="bloom-overlay"></div>
+<!-- ═══════════ NAV ═══════════ -->
+<nav class="nav">
+  <a href="#top" class="nav-brand">
+    <div class="nav-brand-mark"></div>
+    <span>Cafe France</span>
+  </a>
+  <div class="nav-links">
+    <a href="#menu">Menu</a>
+    <a href="#about">Our Story</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#team">Team</a>
+    <a href="https://wa.me/639178615966" class="nav-cta">Contact Us</a>
+  </div>
+</nav>
 
-<!-- GLSL Shader for hero background -->
-<canvas id="hero-canvas"></canvas>
+<!-- ═══════════ HERO ═══════════ -->
+<header id="top" class="hero">
+  <div>
+    <div class="hero-eyebrow">Serving Parañaque ★ 4.0</div>
+    <h1>Cafe France</h1>
+    <p class="hero-subhead">Restaurant</p>
+    <div class="hero-ctas">
+      <a href="https://wa.me/639178615966" class="hero-cta">Get in Touch</a>
+      <span class="hero-hours">10:00 AM – 9:00 PM · 10:00 AM – 9:00 PM</span>
+    </div>
+  </div>
+  <div class="hero-images">
+    <div class="hero-img-main">
+      <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?w=1920&amp;h=1080&amp;fit=crop" alt="Cafe France hero image">
+    </div>
+    <div class="hero-img-sub">
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&amp;h=600&amp;fit=crop" alt="Cafe France interior">
+    </div>
+    <div class="hero-img-circle">
+      <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?w=600&amp;h=400&amp;fit=crop" alt="Cafe France signature drink">
+    </div>
+  </div>
+</header>
 
-<script>
-// ═══════════════════════════════════════════════════════════
-// 1. GLSL SHADER — warm amber noise field on hero
-// ═══════════════════════════════════════════════════════════
-(function() {
-  const canvas = document.getElementById('hero-canvas');
-  const hero = document.querySelector('header') || document.querySelector('.hero');
-  if (!hero) return;
+<!-- ═══════════ MENU / SERVICES ═══════════ -->
+<section id="menu" class="menu-section">
+  <div class="menu-header">
+    <h2 class="section-heading">Our Services</h2>
+  </div>
+  <div class="menu-grid">
+    <div class="menu-card">
+      <div class="menu-card-img">
+        <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?w=600&amp;h=400&amp;fit=crop" alt="Chef&#39;s Special">
+      </div>
+      <div class="menu-card-body">
+        <div class="menu-card-title-row">
+          <h3 class="menu-card-title">Chef's Special</h3>
+        </div>
+        <p class="menu-card-desc">Today's featured dish, made fresh.</p>
+        <div class="menu-card-price"></div>
+      </div>
+    </div>
+    <div class="menu-card">
+      <div class="menu-card-img">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&amp;h=400&amp;fit=crop" alt="Family Platter">
+      </div>
+      <div class="menu-card-body">
+        <div class="menu-card-title-row">
+          <h3 class="menu-card-title">Family Platter</h3>
+        </div>
+        <p class="menu-card-desc">Shareable portions for the table.</p>
+        <div class="menu-card-price"></div>
+      </div>
+    </div>
+    <div class="menu-card">
+      <div class="menu-card-img">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&amp;h=400&amp;fit=crop" alt="Merienda Set">
+      </div>
+      <div class="menu-card-body">
+        <div class="menu-card-title-row">
+          <h3 class="menu-card-title">Merienda Set</h3>
+        </div>
+        <p class="menu-card-desc">Quick, filling, and affordable.</p>
+        <div class="menu-card-price"></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  // Move canvas into hero
-  hero.style.position = hero.style.position || 'relative';
-  hero.appendChild(canvas);
+<!-- ═══════════ ABOUT ═══════════ -->
+<section id="about" class="about-section">
+  <div class="about-inner">
+    <div>
+      <div class="about-year">2026</div>
+      <h2 class="section-heading">About Cafe France</h2>
+      <p class="about-body" style="margin-top: 24px;">Cafe France brings honest, satisfying food to Parañaque. Every dish is made to be shared and enjoyed with the people you love.</p>
+    </div>
+    <div class="about-image-wrap">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&amp;h=600&amp;fit=crop" alt="Cafe France interior">
+      </div>
+    </div>
+  </div>
+</section>
 
-  const gl = canvas.getContext('webgl');
-  if (!gl) { canvas.style.display = 'none'; return; }
+<!-- ═══════════ GALLERY ═══════════ -->
+<section id="gallery" class="gallery-section">
+  <h2 class="section-heading" style="margin-bottom: 42px;">Gallery</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item gallery-item-tall">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&amp;h=600&amp;fit=crop" alt="Cafe France gallery image 1">
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&amp;h=600&amp;fit=crop" alt="Cafe France gallery image 2">
+    </div>
+    <div class="gallery-item gallery-item-tall">
+      <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=800&amp;h=600&amp;fit=crop" alt="Cafe France gallery image 3">
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=800&amp;h=600&amp;fit=crop" alt="Cafe France gallery image 4">
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800&amp;h=600&amp;fit=crop" alt="Cafe France gallery image 5">
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?w=800&amp;h=600&amp;fit=crop" alt="Cafe France gallery image 6">
+    </div>
+  </div>
+</section>
 
-  const vertSrc = `
-    attribute vec2 a_pos;
-    void main() { gl_Position = vec4(a_pos, 0.0, 1.0); }
-  `;
+<!-- ═══════════ TEAM ═══════════ -->
+<section id="team" class="team-section">
+  <h2 class="section-heading" style="margin-bottom: 42px;">Meet the Team</h2>
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="team-card-img">
+        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=300&amp;h=300&amp;fit=crop" alt="Owner / Manager">
+      </div>
+      <h3 class="team-card-name">Owner / Manager</h3>
+      <p class="team-card-role">Cafe France</p>
+    </div>
+    <div class="team-card">
+      <div class="team-card-img">
+        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=300&amp;h=300&amp;fit=crop" alt="Lead Staff">
+      </div>
+      <h3 class="team-card-name">Lead Staff</h3>
+      <p class="team-card-role">Cafe France</p>
+    </div>
+    <div class="team-card">
+      <div class="team-card-img">
+        <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?w=300&amp;h=300&amp;fit=crop" alt="Client Relations">
+      </div>
+      <h3 class="team-card-name">Client Relations</h3>
+      <p class="team-card-role">Cafe France</p>
+    </div>
+  </div>
+</section>
 
-  const fragSrc = `
-    precision mediump float;
-    uniform vec2 u_res;
-    uniform float u_time;
-    uniform float u_scroll;
+<!-- ═══════════ TRUST BADGES ═══════════ -->
+<section class="trust-section">
+  <div class="trust-grid">
+    <div class="trust-card">
+      <div class="trust-label">4.0★</div>
+      <div class="trust-detail">25+ Google reviews</div>
+    </div>
+    <div class="trust-card">
+      <div class="trust-label">Serving Parañaque</div>
+      <div class="trust-detail">Since 2026</div>
+    </div>
+    <div class="trust-card">
+      <div class="trust-label">Walk-ins Welcome</div>
+      <div class="trust-detail">No appointment needed</div>
+    </div>
+  </div>
+</section>
 
-    vec3 mod289(vec3 x) { return x - floor(x * (1.0/289.0)) * 289.0; }
-    vec2 mod289(vec2 x) { return x - floor(x * (1.0/289.0)) * 289.0; }
-    vec3 permute(vec3 x) { return mod289(((x*34.0)+1.0)*x); }
+<!-- ═══════════ TESTIMONIALS ═══════════ -->
+<section class="testimonials-section">
+  <div class="testimonials-header">
+    <h2 class="section-heading">Kind Words</h2>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card">
+      <div class="testimonial-quote-mark">&ldquo;</div>
+      <blockquote class="testimonial-text">Generous servings, great value for Parañaque.</blockquote>
+      <figcaption class="testimonial-name">— Rafael</figcaption>
+      <span class="trust-detail">4.0★ on Google</span>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-quote-mark">&ldquo;</div>
+      <blockquote class="testimonial-text">Tastes like home. Will be back.</blockquote>
+      <figcaption class="testimonial-name">— Bea</figcaption>
+      <span class="trust-detail">4.0★ on Google</span>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-quote-mark">&ldquo;</div>
+      <blockquote class="testimonial-text">Solid food, fast service.</blockquote>
+      <figcaption class="testimonial-name">— Jun</figcaption>
+      <span class="trust-detail">4.0★ on Google</span>
+    </div>
+  </div>
+</section>
 
-    float snoise(vec2 v) {
-      const vec4 C = vec4(0.211324865405187, 0.366025403784439, -0.577350269189626, 0.024390243902439);
-      vec2 i = floor(v + dot(v, C.yy));
-      vec2 x0 = v - i + dot(i, C.xx);
-      vec2 i1 = (x0.x > x0.y) ? vec2(1.0, 0.0) : vec2(0.0, 1.0);
-      vec4 x12 = x0.xyxy + C.xxzz;
-      x12.xy -= i1;
-      i = mod289(i);
-      vec3 p = permute(permute(i.y + vec3(0.0, i1.y, 1.0)) + i.x + vec3(0.0, i1.x, 1.0));
-      vec3 m = max(0.5 - vec3(dot(x0,x0), dot(x12.xy,x12.xy), dot(x12.zw,x12.zw)), 0.0);
-      m = m*m; m = m*m;
-      vec3 x = 2.0 * fract(p * C.www) - 1.0;
-      vec3 h = abs(x) - 0.5;
-      vec3 ox = floor(x + 0.5);
-      vec3 a0 = x - ox;
-      m *= 1.79284291400159 - 0.85373472095314 * (a0*a0 + h*h);
-      vec3 g;
-      g.x = a0.x * x0.x + h.x * x0.y;
-      g.yz = a0.yz * x12.xz + h.yz * x12.yw;
-      return 130.0 * dot(m, g);
-    }
+<!-- ═══════════ PRICING ═══════════ -->
+<section class="pricing-section">
+  <h2 class="section-heading" style="margin-bottom: 42px;">Packages</h2>
+  <div class="pricing-grid">
+    <div class="pricing-card">
+      <h3 class="pricing-name">{{PRICING_1_NAME}}</h3>
+      <div class="pricing-price">{{PRICING_1_PRICE}}</div>
+      <p class="pricing-features">{{PRICING_1_FEATURES}}</p>
+    </div>
+    <div class="pricing-card">
+      <h3 class="pricing-name">{{PRICING_2_NAME}}</h3>
+      <div class="pricing-price">{{PRICING_2_PRICE}}</div>
+      <p class="pricing-features">{{PRICING_2_FEATURES}}</p>
+    </div>
+    <div class="pricing-card">
+      <h3 class="pricing-name">{{PRICING_3_NAME}}</h3>
+      <div class="pricing-price">{{PRICING_3_PRICE}}</div>
+      <p class="pricing-features">{{PRICING_3_FEATURES}}</p>
+    </div>
+  </div>
+</section>
 
-    float fbm(vec2 p) {
-      float v = 0.0;
-      float a = 0.5;
-      for (int i = 0; i < 4; i++) {
-        v += a * snoise(p);
-        p *= 2.0;
-        a *= 0.5;
-      }
-      return v;
-    }
+<!-- ═══════════ VISIT / CONTACT ═══════════ -->
+<section id="visit" class="visit-section">
+  <div class="visit-inner">
+    <div>
+      <div class="visit-eyebrow">Serving Parañaque ★ 4.0</div>
+      <h2 class="visit-heading">Come Say Hi</h2>
+      <p class="visit-address">F24P+9MP<br>Parañaque, Metro Manila</p>
+      <div class="visit-ctas">
+        <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.8!2d121.04!3d14.55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2sCafe+France!5e0!3m2!1sen!2sph" class="visit-cta-primary">Get Directions</a>
+        <a href="" class="visit-cta-secondary">Instagram</a>
+        <a href="" class="visit-cta-secondary">Facebook</a>
+      </div>
+    </div>
+    <div>
+      <div class="hours-card">
+        <h3 class="hours-title">Hours</h3>
+        <div class="hours-row">
+          <span class="day">Monday – Friday</span>
+          <span class="time">10:00 AM – 9:00 PM</span>
+        </div>
+        <div class="hours-row">
+          <span class="day">Saturday – Sunday</span>
+          <span class="time">10:00 AM – 9:00 PM</span>
+        </div>
+      </div>
+      <div class="maps-embed">
+        https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.8!2d121.04!3d14.55!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2sCafe+France!5e0!3m2!1sen!2sph
+      </div>
+    </div>
+  </div>
+  <div class="visit-footer">
+    <span class="visit-footer-brand">Cafe France © 2026 · </span>
+    <span class="visit-footer-phone">639178615966</span>
+  </div>
+</section>
 
-    void main() {
-      vec2 uv = gl_FragCoord.xy / u_res.xy;
-      vec2 p = uv * 3.0;
-      p.y += u_scroll * 0.002;
-      p.x += u_time * 0.02;
-
-      float n = fbm(p + vec2(u_time * 0.03, u_time * 0.01));
-      float n2 = fbm(p * 1.5 + vec2(-u_time * 0.02, u_time * 0.04));
-
-      vec3 col1 = vec3(0.07, 0.07, 0.07);
-      vec3 col2 = vec3(0.89, 0.43, 0.27);
-      vec3 col3 = vec3(1.0, 0.71, 0.61);
-
-      float t = smoothstep(-0.3, 0.5, n);
-      float t2 = smoothstep(0.2, 0.8, n2 * n);
-
-      vec3 col = mix(col1, col2, t * 0.15);
-      col = mix(col, col3, t2 * 0.08);
-
-      float vig = 1.0 - length(uv - 0.5) * 0.8;
-      col *= vig;
-
-      gl_FragColor = vec4(col, 1.0);
-    }
-  `;
-
-  function compile(type, src) {
-    const s = gl.createShader(type);
-    gl.shaderSource(s, src);
-    gl.compileShader(s);
-    return s;
-  }
-
-  const prog = gl.createProgram();
-  gl.attachShader(prog, compile(gl.VERTEX_SHADER, vertSrc));
-  gl.attachShader(prog, compile(gl.FRAGMENT_SHADER, fragSrc));
-  gl.linkProgram(prog);
-  gl.useProgram(prog);
-
-  const buf = gl.createBuffer();
-  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
-  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
-  const posLoc = gl.getAttribLocation(prog, 'a_pos');
-  gl.enableVertexAttribArray(posLoc);
-  gl.vertexAttribPointer(posLoc, 2, gl.FLOAT, false, 0, 0);
-
-  const resLoc = gl.getUniformLocation(prog, 'u_res');
-  const timeLoc = gl.getUniformLocation(prog, 'u_time');
-  const scrollLoc = gl.getUniformLocation(prog, 'u_scroll');
-
-  function resize() {
-    const dpr = Math.min(window.devicePixelRatio, 1.5);
-    canvas.width = canvas.offsetWidth * dpr;
-    canvas.height = canvas.offsetHeight * dpr;
-    gl.viewport(0, 0, canvas.width, canvas.height);
-  }
-  resize();
-  window.addEventListener('resize', resize);
-
-  let scrollY = 0;
-  window.addEventListener('scroll', () => { scrollY = window.scrollY; }, { passive: true });
-
-  const start = performance.now();
-  let visible = true;
-  const observer = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; }, { threshold: 0 });
-  observer.observe(hero);
-
-  function render() {
-    requestAnimationFrame(render);
-    if (!visible || document.hidden) return;
-    const t = (performance.now() - start) / 1000;
-    gl.uniform2f(resLoc, canvas.width, canvas.height);
-    gl.uniform1f(timeLoc, t);
-    gl.uniform1f(scrollLoc, scrollY);
-    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
-  }
-  render();
-})();
-
-// ═══════════════════════════════════════════════════════════
-// 2. SCROLL REVEALS — Intersection Observer
-// ═══════════════════════════════════════════════════════════
-(function() {
-  // Add reveal classes to key elements
-  const sections = document.querySelectorAll('section, header > div, footer > div');
-  sections.forEach(s => s.classList.add('reveal'));
-
-  // Add stagger to grids
-  const grids = document.querySelectorAll('.grid');
-  grids.forEach(g => g.classList.add('reveal-stagger'));
-
-  // Add clip-reveal to images
-  const images = document.querySelectorAll('.aspect-square, .aspect-\\[4\\/5\\]');
-  images.forEach(img => img.classList.add('clip-reveal'));
-
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('in');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
-
-  document.querySelectorAll('.reveal, .reveal-stagger, .clip-reveal').forEach(el => {
-    revealObserver.observe(el);
-  });
-})();
-
-// ═══════════════════════════════════════════════════════════
-// 3. BLOOM OVERLAY — glow follows mouse on CTA
-// ═══════════════════════════════════════════════════════════
-(function() {
-  const bloom = document.getElementById('bloom-overlay');
-  const cta = document.querySelector('[class*="primary-container"]');
-
-  if (!cta || !bloom) return;
-
-  cta.addEventListener('mouseenter', () => { bloom.classList.add('active'); });
-  cta.addEventListener('mouseleave', () => { bloom.classList.remove('active'); });
-
-  cta.addEventListener('mousemove', (e) => {
-    const x = (e.clientX / window.innerWidth) * 100;
-    const y = (e.clientY / window.innerHeight) * 100;
-    bloom.style.setProperty('--bloom-x', x + '%');
-    bloom.style.setProperty('--bloom-y', y + '%');
-  });
-})();
-
-// ═══════════════════════════════════════════════════════════
-// 4. PARALLAX — hero image subtle depth
-// ═══════════════════════════════════════════════════════════
-(function() {
-  const heroImage = document.querySelector('header .aspect-square');
-  if (!heroImage) return;
-
-  let ticking = false;
-  window.addEventListener('scroll', () => {
-    if (!ticking) {
-      requestAnimationFrame(() => {
-        const scrolled = window.scrollY;
-        if (scrolled < window.innerHeight) {
-          heroImage.style.transform = `translateY(${scrolled * 0.12}px)`;
-        }
-        ticking = false;
-      });
-      ticking = true;
-    }
-  }, { passive: true });
-})();
-
-// ═══════════════════════════════════════════════════════════
-// 5. MAGNETIC BUTTONS
-// ═══════════════════════════════════════════════════════════
-(function() {
-  document.querySelectorAll('button[class*="bg-primary"], button[class*="bg-on-primary"]').forEach(btn => {
-    btn.classList.add('btn-magnetic');
-  });
-})();
-</script>
-</body></html>
+</body>
+</html>
